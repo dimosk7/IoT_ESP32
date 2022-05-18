@@ -122,7 +122,7 @@ mydb = mysql.connector.connect(
 )
 
 
-#write data to MySql database
+# store data to MySql database
 
 mycursor = mydb.cursor()
 
