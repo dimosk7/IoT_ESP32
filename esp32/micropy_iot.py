@@ -53,7 +53,6 @@ def send_data() :
             print_message("Data could not be sent")
         
  
-
         
 ## connect to WiFi
 
@@ -71,8 +70,6 @@ print_message("Connected to WiFi")
 a = wlan.ifconfig()
 sleep(1)
 print_message("The IP-level network interface parameters are :\n\n\tESP32 IP address: {} \n\tSubnet mask: {} \n\tGateway: {} \n\tDNS: {}\n".format(a[0],a[1],a[2],a[3]))
-
-
 
 
 ## connect to MQTT broker (Adafruit)
