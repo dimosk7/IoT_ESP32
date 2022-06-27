@@ -4,7 +4,6 @@ import mysql.connector
 import csv
 
 
-
 ## get data from Adafruit feeds
 
 r = requests.get("https://io.adafruit.com/api/v2/dimosk7/feeds/temper/data/chart")
@@ -16,7 +15,6 @@ hum = json.loads(str(r1.content, "utf-8"))
 adaf_data = temp["data"]
 adaf_hum = hum["data"]
 
-
 ##put all data to one list
 
 j = 0
@@ -24,8 +22,7 @@ for i in adaf_hum:
     adaf_data[j].append(i[1])
     j+=1
 
-
-
+    
 ## Export data to Excel
 
 def replace_z(n):
